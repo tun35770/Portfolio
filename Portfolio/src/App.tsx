@@ -1,5 +1,5 @@
-import { Nav, Navbar } from 'react-bootstrap'
-import { HashRouter as Router, Route, Routes, Link, Navigate, useNavigate } from "react-router-dom"
+import { Card, Nav, Navbar } from 'react-bootstrap'
+import { HashRouter as Router } from "react-router-dom"
 import { HashLink } from 'react-router-hash-link';
 import './App.css'
 import Showcase from './components/Showcase.tsx'
@@ -11,32 +11,25 @@ function App() {
     <Router>
       <div className='App'>
 
-        <Navbar sticky="top" bg="dark" variant="dark" expand="lg">
+        <Navbar className="dark-color" sticky="top" expand="lg">
             
-          <Navbar.Brand className="mx-3 title" href="/" style={{color:'#fff'}}>
+          <Navbar.Brand className="mx-3 title" href="/" style={{color:"#fff"}}>
             
             Ryan Murphy
           </Navbar.Brand>
 
           <Navbar.Toggle className="mx-2" aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
-            <Nav className="me-3">
-              <HashLink smooth to="/#bio" className="nav-link white-text">Home</HashLink>
-              <HashLink smooth to="/#portfolio" className="nav-link white-text">Portfolio</HashLink>
+            <Nav className="me-3" >
+              <HashLink style={{color:"#fff"}} smooth to="/#bio" className="nav-link white-text">Home</HashLink>
+              <HashLink style={{color:"#fff"}} smooth to="/#resume" className="nav-link white-text">Resume</HashLink>
+              <HashLink style={{color:"#fff"}} smooth to="/#portfolio" className="nav-link white-text">Portfolio</HashLink>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
 
 
-        <section id="bio" className="bio-container" style={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'center',
-          alignContent: 'center',
-          height: '100vh',
-          minWidth: '200px',
-      
-        }}>
+        <section id="bio" className="light-color-1 bio-container">
           <div className="name pr-3" style={{
             fontSize: '8em',
             textAlign: 'right',
@@ -65,7 +58,124 @@ function App() {
 
         </section>
 
-        <section id="portfolio" className='Showcase-Group'>
+
+        <section id="resume" className="light-color-2 resume-container">
+
+          <h1 className="pb-3" style={{
+            fontSize: '4em',
+            textAlign: 'center',
+            width: '50%',
+            margin: '0 auto',
+          }}> Resume </h1>
+
+          <div style={{
+            display:'flex',
+            flexDirection:'row',
+          }}>
+
+            <div className="education pr-3" style={{
+              display: 'flex',
+              flexDirection: 'column',
+              width: '50%',
+            }}>
+
+              <h1> Education </h1>
+
+              <div className="p-5" style={{
+                display:'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                fontSize:'1.4em',
+                width: '100%',
+                margin: '0 auto'
+              }}>
+                
+                <Card className="p-3" style={{
+                  backgroundColor: 'rgb(44, 51, 51)',
+                  color: 'white',
+                }}>
+                  <h1> Temple University </h1>
+
+                  <p> B.S. Computer Science </p>
+                  <p> 3.8 GPA </p>
+                  <p> Dean's List 2021 & 2022 </p>
+                </Card>
+
+                <Card className="p-3" style={{
+                  backgroundColor: 'rgb(44, 51, 51)',
+                  color: 'white',
+                }}>
+                  <h1> Penn State University </h1>
+
+                  <p> No degree (transferred)</p>
+                  <p> 3.39 GPA </p>
+                </Card>
+              </div>
+              
+            </div>
+
+            <div className="work pr-3" style={{
+              display: 'flex',
+              flexDirection: 'column',
+              width: '50%',
+            }}>
+
+              <h1> Work </h1>
+
+              <div className="p-5" style={{
+                display:'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                fontSize:'1.4em',
+                width: '100%',
+                margin: '0 auto'
+              }}>
+                
+                <Card className="p-3" style={{
+                  backgroundColor: 'rgb(44, 51, 51)',
+                  color: 'white',
+                }}>
+                  <h1> Wegman's Food Markets </h1>
+
+                  <p> Retail Associate </p>
+                  <p> Worked alongside team members to maintain department
+                      and aid customers, as well as satisfying high company standards. </p>
+                </Card>
+
+                <Card className="p-3" style={{
+                  backgroundColor: 'rgb(44, 51, 51)',
+                  color: 'white',
+                }}>
+                  <h1> UPS </h1>
+
+                  <p> Package Handler </p>
+                  <p> Coordianted with teammates to move packages swiftly,
+                      ensured packages were loaded in a timely manner prioritizing
+                      accuracy to ensure quality customer experience.
+                  </p>
+                </Card>
+
+                <Card className="p-3" style={{
+                  backgroundColor: 'rgb(44, 51, 51)',
+                  color: 'white',
+                }}>
+                  <h1> Peer Tutor </h1>
+
+                  <p> Mathematics and Computer Science </p>
+                  <p> Aided students with coursework in mathematics and computer science.
+                      Explained relevant concepts to ensure student retention and comprehension.
+                  </p>
+                </Card>
+              </div>
+              
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <section id="portfolio" className='light-color-1 Showcase-Group'>
           <h1 style={{fontSize: '6em'}}> Portfolio </h1>
           <Showcase showcaseImage='/src/assets/BugSquish.png' showcaseTitle='BugSquish' 
                     showcaseDescription="A bug ticketing system for developers to collaborate 
