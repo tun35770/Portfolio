@@ -55,6 +55,19 @@ function App() {
 
         </section>
 
+        <section id="technologies" className="dark-color">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="100em" />
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="100em"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="100em"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="100em"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="100em"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="100em"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="100em"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="100em"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="100em"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="100em"/>
+        
+        </section>
 
         <section id="resume" className="light-color-2 resume-container">
 
@@ -85,13 +98,13 @@ function App() {
                 display:'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                fontSize:'1.4em',
+                fontSize:'1em',
                 width: '100%',
                 margin: '0 auto'
               }}>
                 
-                <Card className="p-3" style={{
-                  backgroundColor: 'rgb(0, 128, 191)',
+                <Card className="Card p-3" style={{
+                  backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
                 }}>
                   <h1> Temple University </h1>
@@ -101,8 +114,8 @@ function App() {
                   <p> Dean's List 2021 & 2022 </p>
                 </Card>
 
-                <Card className="p-3" style={{
-                  backgroundColor: 'rgb(0, 128, 191)',
+                <Card className="Card p-3" style={{
+                  backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
                 }}>
                   <h1> Penn State University </h1>
@@ -127,13 +140,13 @@ function App() {
                 display:'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',
-                fontSize:'1.4em',
+                fontSize:'1em',
                 width: '100%',
                 margin: '0 auto'
               }}>
                 
-                <Card className="p-3" style={{
-                  backgroundColor: 'rgb(0, 128, 191)',
+                <Card className="Card p-3" style={{
+                  backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
                 }}>
                   <h1> Wegman's Food Markets </h1>
@@ -143,8 +156,8 @@ function App() {
                       and aid customers, as well as satisfying high company standards. </p>
                 </Card>
 
-                <Card className="p-3" style={{
-                  backgroundColor: 'rgb(0, 128, 191)',
+                <Card className="Card p-3" style={{
+                  backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
                 }}>
                   <h1> UPS </h1>
@@ -156,8 +169,8 @@ function App() {
                   </p>
                 </Card>
 
-                <Card className="p-3" style={{
-                  backgroundColor: 'rgb(0, 128, 191)',
+                <Card className="Card p-3" style={{
+                  backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
                 }}>
                   <h1> Peer Tutor </h1>
