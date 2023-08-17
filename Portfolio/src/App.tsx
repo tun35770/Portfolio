@@ -3,6 +3,7 @@ import { HashRouter as Router } from "react-router-dom"
 import { HashLink } from 'react-router-hash-link';
 import './App.css'
 import Showcase from './components/Showcase.tsx'
+import { lazy } from 'react';
 
 
 function App() {
@@ -28,11 +29,22 @@ function App() {
 
 
         <section id="bio" className="light-color-1 bio-container">
+          
           <div className="name pr-3" style={{
             textAlign: 'right',
             width: '50%',
           }}>
             <h1 style={{fontSize: '10vw',}}> Ryan <br />Murphy </h1>
+            <br /> <br />
+            <div style={{
+              display: 'flex',
+              justifyContent: 'flex-end',
+              gap: '2em'
+            }}>
+              <a href="https://www.linkedin.com/in/ryan-m-338324aa/" target="blank_"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="50em"/> </a>
+              <a href="https://github.com/tun35770" target="blank_"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50em" /> </a>
+            </div>
+
           </div>
 
           <div className="bio pl-3" style={{
@@ -65,6 +77,7 @@ function App() {
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="100em"/>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="100em"/>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="100em"/>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="100em"/>
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="100em"/>
         
         </section>
