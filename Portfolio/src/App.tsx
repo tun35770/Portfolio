@@ -12,16 +12,14 @@ function App() {
       <div className='App'>
 
         <Navbar className="dark-color" sticky="top" expand="lg">
-            
-          <Navbar.Brand className="mx-3 title" href="/" style={{color:"#fff"}}>
-            
-            Ryan Murphy
-          </Navbar.Brand>
 
-          <Navbar.Toggle className="mx-2" aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse className="justify-content-end" id="basic-navbar-nav">
+          <Navbar.Toggle className="mx-2" aria-controls="basic-navbar-nav" style={{
+            backgroundColor: 'rgb(204, 249, 255)',
+            color: 'rgb(0, 128, 191)',
+          }}/>
+          <Navbar.Collapse className="justify-content-center" id="basic-navbar-nav">
             <Nav className="me-3" >
-              <HashLink style={{color:"#fff"}} smooth to="/#bio" className="nav-link white-text">Home</HashLink>
+              <HashLink style={{color:"#fff"}} smooth to="/#bio" className="nav-link white-text">About Me</HashLink>
               <HashLink style={{color:"#fff"}} smooth to="/#resume" className="nav-link white-text">Resume</HashLink>
               <HashLink style={{color:"#fff"}} smooth to="/#portfolio" className="nav-link white-text">Portfolio</HashLink>
             </Nav>
@@ -31,11 +29,10 @@ function App() {
 
         <section id="bio" className="light-color-1 bio-container">
           <div className="name pr-3" style={{
-            fontSize: '8em',
             textAlign: 'right',
             width: '50%',
           }}>
-            Ryan <br />Murphy
+            <h1 style={{fontSize: '10vw',}}> Ryan <br />Murphy </h1>
           </div>
 
           <div className="bio pl-3" style={{
@@ -71,12 +68,15 @@ function App() {
           <div style={{
             display:'flex',
             flexDirection:'row',
+            flexWrap: 'wrap',
+            justifyContent: 'center'
           }}>
 
-            <div className="education pr-3" style={{
+            <div className="education" style={{
               display: 'flex',
               flexDirection: 'column',
               width: '50%',
+              minWidth: '400px',
             }}>
 
               <h1> Education </h1>
@@ -91,7 +91,7 @@ function App() {
               }}>
                 
                 <Card className="p-3" style={{
-                  backgroundColor: 'rgb(44, 51, 51)',
+                  backgroundColor: 'rgb(0, 128, 191)',
                   color: 'white',
                 }}>
                   <h1> Temple University </h1>
@@ -102,7 +102,7 @@ function App() {
                 </Card>
 
                 <Card className="p-3" style={{
-                  backgroundColor: 'rgb(44, 51, 51)',
+                  backgroundColor: 'rgb(0, 128, 191)',
                   color: 'white',
                 }}>
                   <h1> Penn State University </h1>
@@ -114,10 +114,11 @@ function App() {
               
             </div>
 
-            <div className="work pr-3" style={{
+            <div className="work" style={{
               display: 'flex',
               flexDirection: 'column',
               width: '50%',
+              minWidth: '400px',
             }}>
 
               <h1> Work </h1>
@@ -132,7 +133,7 @@ function App() {
               }}>
                 
                 <Card className="p-3" style={{
-                  backgroundColor: 'rgb(44, 51, 51)',
+                  backgroundColor: 'rgb(0, 128, 191)',
                   color: 'white',
                 }}>
                   <h1> Wegman's Food Markets </h1>
@@ -143,7 +144,7 @@ function App() {
                 </Card>
 
                 <Card className="p-3" style={{
-                  backgroundColor: 'rgb(44, 51, 51)',
+                  backgroundColor: 'rgb(0, 128, 191)',
                   color: 'white',
                 }}>
                   <h1> UPS </h1>
@@ -156,7 +157,7 @@ function App() {
                 </Card>
 
                 <Card className="p-3" style={{
-                  backgroundColor: 'rgb(44, 51, 51)',
+                  backgroundColor: 'rgb(0, 128, 191)',
                   color: 'white',
                 }}>
                   <h1> Peer Tutor </h1>

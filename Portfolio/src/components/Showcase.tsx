@@ -9,7 +9,7 @@ const Showcase = ( {showcaseImage, showcaseTitle, showcaseDescription, showcaseL
         <img className='Showcase-Image' src={showcaseImage} alt='Showcase Image'/>
         <p className='my-3 Showcase-Description' > {showcaseDescription} </p>
         <a  href={showcaseLink} target="_blank" style={{
-          color: 'aquamarine'
+          color: 'rgb(0, 128, 191)'
         }}>Click here for demo</a>
     </div>
   )
