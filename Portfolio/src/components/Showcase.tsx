@@ -1,5 +1,3 @@
-import React from 'react'
-
 const Showcase = ( {showcaseImage, showcaseTitle, showcaseDescription, showcaseLink }: {showcaseImage: string, showcaseTitle: string, showcaseDescription: string, showcaseLink: string} ) => {
   return (
     <div className='Showcase light-color-2 my-3 p-3' style={{

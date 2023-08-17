@@ -2,8 +2,7 @@ import { Card, Nav, Navbar } from 'react-bootstrap'
 import { HashRouter as Router } from "react-router-dom"
 import { HashLink } from 'react-router-hash-link';
 import './App.css'
-import Showcase from './components/Showcase.tsx'
-import { lazy } from 'react';
+import Showcase from './components/Showcase'
 
 
 function App() {
