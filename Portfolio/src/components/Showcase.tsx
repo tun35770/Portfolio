@@ -2,11 +2,13 @@ import React from 'react'
 
 const Showcase = ( {showcaseImage, showcaseTitle, showcaseDescription, showcaseLink }: {showcaseImage: string, showcaseTitle: string, showcaseDescription: string, showcaseLink: string} ) => {
   return (
-    <div className='Showcase'>
+    <div className='Showcase my-3 p-3' style={{
+      width: '50%',
+    }}>
         <h1 className='Showcase-Title'> {showcaseTitle} </h1>
         <img className='Showcase-Image' src={showcaseImage} alt='Showcase Image'/>
-        <p className='Showcase-Description'> {showcaseDescription} </p>
-        <a href={showcaseLink}>Link</a>
+        <p className='my-3 Showcase-Description' > {showcaseDescription} </p>
+        <a href={showcaseLink} target="_blank">Demo</a>
     </div>
   )
 }
