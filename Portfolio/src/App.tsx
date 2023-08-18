@@ -213,7 +213,7 @@ function App() {
                     showcaseDescription="My own version of Conway's Game of Life, made in React."
                     showcaseLink='https://tun35770.github.io/game-of-life'/>
 
-          <Showcase showcaseImage='/public/StockTracker.png' showcaseTitle='Stock Tracker' 
+          <Showcase showcaseImage='/StockTracker.png' showcaseTitle='Stock Tracker' 
                     showcaseDescription='A stock price tracking app. Makes use of finnhub and CoinGecko APIs
                             to fetch live prices.' 
                     showcaseLink='https://tun35770.github.io/StockTracker/'/>
