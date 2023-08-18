@@ -1,8 +1,17 @@
-const Showcase = ( {showcaseImage, showcaseTitle, showcaseDescription, showcaseLink }: {showcaseImage: string, showcaseTitle: string, showcaseDescription: string, showcaseLink: string} ) => {
+const Showcase = ( {showcaseImage, showcaseTitle, showcaseDescription, showcaseLink, position }: {showcaseImage: string, showcaseTitle: string, showcaseDescription: string, showcaseLink: string, position: string} ) => {
+  
+  const getPositionClassName = (position:string) => {
+    let classname;
+    if(position === 'left')
+      classname = 'Showcase-Left'
+    else 
+      classname = 'Showcase-Right'
+
+    return classname;
+  }
+  
   return (
-    <div className='Showcase light-color-2 my-3 p-3' style={{
-      width: '50%',
-    }}>
+    <div className={` ${getPositionClassName(position)} Showcase light-color-2 my-3 p-3`} >
         <h1 className='Showcase-Title'> {showcaseTitle} </h1>
         <img className='Showcase-Image' src={showcaseImage} alt='Showcase Image'/>
         <p className='my-3 Showcase-Description' > {showcaseDescription} </p>

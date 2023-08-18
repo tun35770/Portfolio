@@ -29,7 +29,7 @@ function App() {
 
         <section id="bio" className="light-color-1 bio-container">
           
-          <div className="name pr-3" style={{
+          <div className="name px-3" style={{
             textAlign: 'right',
             width: '50%',
           }}>
@@ -46,7 +46,7 @@ function App() {
 
           </div>
 
-          <div className="bio pl-3" style={{
+          <div className="bio px-3" style={{
             fontSize: '1.5em',
             width: '50%',
             textAlign: 'left',
@@ -116,24 +116,45 @@ function App() {
               }}>
                 
                 <Card className="Card p-3" style={{
+                  display:'flex',
+                  flexDirection:'row',
+                  justifyContent: 'space-around',
                   backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
                 }}>
-                  <h1> Temple University </h1>
+                  <div style={{margin:'auto 0'}}>
+                    <img src='/Temple.png' width='150em' height='150em' />
+                  </div>
+                  
 
-                  <p> B.S. Computer Science </p>
-                  <p> 3.8 GPA </p>
-                  <p> Dean's List 2021 & 2022 </p>
+                  <div>
+                    <h1> Temple University </h1>
+
+                    <p> B.S. Computer Science </p>
+                    <p> 3.8 GPA </p>
+                    <p> Dean's List 2021 & 2022 </p>
+                  </div>
+                  
                 </Card>
 
                 <Card className="Card p-3" style={{
+                  display:'flex',
+                  flexDirection:'row',
+                  justifyContent: 'space-around',
                   backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
                 }}>
-                  <h1> Penn State University </h1>
 
-                  <p> No degree (transferred)</p>
-                  <p> 3.39 GPA </p>
+                  <div>
+                    <img src='PennState.png' width='150em' height='150em' />
+                  </div>
+                  <div>
+                    <h1> Penn State University </h1>
+
+                    <p> No degree (transferred)</p>
+                    <p> 3.39 GPA </p>
+                  </div>
+                  
                 </Card>
               </div>
               
@@ -202,21 +223,26 @@ function App() {
 
 
         <section id="portfolio" className='light-color-1 Showcase-Group'>
-          <h1 style={{fontSize: '6em'}}> Portfolio </h1>
+          <h1 style={{
+            fontSize: '6em',
+            }}> Portfolio </h1>
           <Showcase showcaseImage='/BugSquish.png' showcaseTitle='BugSquish' 
                     showcaseDescription="A bug ticketing system for developers to collaborate 
                             and manage their software's bugs throughout development.
                             ***DEMO LOGIN*** user: ryanmu1415 pass: Password123456#"
-                    showcaseLink='https://tun35770.github.io/BugSquish'/>
+                    showcaseLink='https://tun35770.github.io/BugSquish'
+                    position='left' />
 
           <Showcase showcaseImage='/game-of-life.png' showcaseTitle='Game of Life' 
                     showcaseDescription="My own version of Conway's Game of Life, made in React."
-                    showcaseLink='https://tun35770.github.io/game-of-life'/>
+                    showcaseLink='https://tun35770.github.io/game-of-life'
+                    position='right'/>
 
           <Showcase showcaseImage='/StockTracker.png' showcaseTitle='Stock Tracker' 
                     showcaseDescription='A stock price tracking app. Makes use of finnhub and CoinGecko APIs
                             to fetch live prices.' 
-                    showcaseLink='https://tun35770.github.io/StockTracker/'/>
+                    showcaseLink='https://tun35770.github.io/StockTracker/'
+                    position='left'/>
         </section>
 
       </div>

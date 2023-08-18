@@ -48,17 +48,27 @@
 }
 
 .Showcase {
-  width: 100%;
+  width: 50%;
+  min-width: 500px;
   border: 1px solid black;
 }
 
 .Showcase-Group {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   width: 100%;
   padding-top: 5em;
+  margin: 0 auto;
+}
+
+.Showcase-Left {
+  align-self: flex-start;
+  margin-left: 2em;
+}
+
+.Showcase-Right {
+  align-self: flex-end;
+  margin-right: 2em;
 }
 
 .Showcase-Image {
