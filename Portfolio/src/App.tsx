@@ -203,7 +203,7 @@ function App() {
 
         <section id="portfolio" className='light-color-1 Showcase-Group'>
           <h1 style={{fontSize: '6em'}}> Portfolio </h1>
-          <Showcase showcaseImage='./src/assets/BugSquish.png' showcaseTitle='BugSquish' 
+          <Showcase showcaseImage='../src/assets/BugSquish.png' showcaseTitle='BugSquish' 
                     showcaseDescription="A bug ticketing system for developers to collaborate 
                             and manage their software's bugs throughout development.
                             ***DEMO LOGIN*** user: ryanmu1415 pass: Password123456#"
