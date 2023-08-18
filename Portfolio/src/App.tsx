@@ -203,17 +203,17 @@ function App() {
 
         <section id="portfolio" className='light-color-1 Showcase-Group'>
           <h1 style={{fontSize: '6em'}}> Portfolio </h1>
-          <Showcase showcaseImage='../src/assets/BugSquish.png' showcaseTitle='BugSquish' 
+          <Showcase showcaseImage='../public/BugSquish.png' showcaseTitle='BugSquish' 
                     showcaseDescription="A bug ticketing system for developers to collaborate 
                             and manage their software's bugs throughout development.
                             ***DEMO LOGIN*** user: ryanmu1415 pass: Password123456#"
                     showcaseLink='https://tun35770.github.io/BugSquish'/>
 
-          <Showcase showcaseImage='./src/assets/game-of-life.png' showcaseTitle='Game of Life' 
+          <Showcase showcaseImage='./public/game-of-life.png' showcaseTitle='Game of Life' 
                     showcaseDescription="My own version of Conway's Game of Life, made in React."
                     showcaseLink='https://tun35770.github.io/game-of-life'/>
 
-          <Showcase showcaseImage='/src/assets/StockTracker.png' showcaseTitle='Stock Tracker' 
+          <Showcase showcaseImage='/public/StockTracker.png' showcaseTitle='Stock Tracker' 
                     showcaseDescription='A stock price tracking app. Makes use of finnhub and CoinGecko APIs
                             to fetch live prices.' 
                     showcaseLink='https://tun35770.github.io/StockTracker/'/>
