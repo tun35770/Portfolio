@@ -11,7 +11,7 @@ const Showcase = ( {showcaseImage, showcaseTitle, showcaseDescription, showcaseL
   }
   
   return (
-    <div className={` ${getPositionClassName(position)} Showcase light-color-2 my-3 p-3`} >
+    <div className={` ${getPositionClassName(position)} Showcase hidden light-color-2 my-3 p-3`} >
         <h1 className='Showcase-Title'> {showcaseTitle} </h1>
         <img className='Showcase-Image' src={showcaseImage} alt='Showcase Image'/>
         <p className='my-3 Showcase-Description' > {showcaseDescription} </p>

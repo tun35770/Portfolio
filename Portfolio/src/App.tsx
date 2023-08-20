@@ -3,9 +3,27 @@ import { HashRouter as Router } from "react-router-dom"
 import { HashLink } from 'react-router-hash-link';
 import './App.css'
 import Showcase from './components/Showcase'
+import { useEffect } from 'react';
 
 
 function App() {
+
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        console.log(entry);
+        if(entry.isIntersecting)
+          entry.target.classList.add('show')
+        else
+          entry.target.classList.remove('show');
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+  }, [])
+ 
 
   return (
     <Router>
@@ -29,7 +47,7 @@ function App() {
 
         <section id="bio" className="light-color-1 bio-container">
           
-          <div className="name px-3" style={{
+          <div className="hidden name px-3" style={{
             textAlign: 'right',
             width: '50%',
           }}>
@@ -46,7 +64,7 @@ function App() {
 
           </div>
 
-          <div className="bio px-3" style={{
+          <div className="hidden bio px-3" style={{
             fontSize: '1.5em',
             width: '50%',
             textAlign: 'left',
@@ -83,7 +101,7 @@ function App() {
 
         <section id="resume" className="light-color-2 resume-container">
 
-          <h1 className="pb-3" style={{
+          <h1 className="hidden pb-3" style={{
             fontSize: '4em',
             textAlign: 'center',
             width: '50%',
@@ -104,7 +122,7 @@ function App() {
               minWidth: '400px',
             }}>
 
-              <h1> Education </h1>
+              <h1 className='hidden'> Education </h1>
 
               <div className="p-5" style={{
                 display:'flex',
@@ -115,7 +133,7 @@ function App() {
                 margin: '0 auto'
               }}>
                 
-                <Card className="Card p-3" style={{
+                <Card className="Card hidden p-3" style={{
                   display:'flex',
                   flexDirection:'row',
                   justifyContent: 'space-around',
@@ -137,7 +155,7 @@ function App() {
                   
                 </Card>
 
-                <Card className="Card p-3" style={{
+                <Card className="Card hidden p-3" style={{
                   display:'flex',
                   flexDirection:'row',
                   justifyContent: 'space-around',
@@ -167,7 +185,7 @@ function App() {
               minWidth: '400px',
             }}>
 
-              <h1> Work </h1>
+              <h1 className='hidden'> Work </h1>
 
               <div className="p-5" style={{
                 display:'flex',
@@ -178,7 +196,7 @@ function App() {
                 margin: '0 auto'
               }}>
                 
-                <Card className="Card p-3" style={{
+                <Card className="Card hidden p-3" style={{
                   backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
                 }}>
@@ -189,7 +207,7 @@ function App() {
                       and aid customers, as well as satisfying high company standards. </p>
                 </Card>
 
-                <Card className="Card p-3" style={{
+                <Card className="Card hidden p-3" style={{
                   backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
                 }}>
@@ -202,7 +220,7 @@ function App() {
                   </p>
                 </Card>
 
-                <Card className="Card p-3" style={{
+                <Card className="Card hidden p-3" style={{
                   backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
                 }}>
@@ -223,7 +241,7 @@ function App() {
 
 
         <section id="portfolio" className='light-color-1 Showcase-Group'>
-          <h1 style={{
+          <h1 className = 'hidden' style={{
             fontSize: '6em',
             }}> Portfolio </h1>
           <Showcase showcaseImage='/BugSquish.png' showcaseTitle='BugSquish' 
