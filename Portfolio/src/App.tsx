@@ -221,7 +221,7 @@ function App() {
                   <h1> UPS </h1>
 
                   <p> Package Handler </p>
-                  <p> Coordianted with teammates to move packages swiftly,
+                  <p> Coordinated with teammates to move packages swiftly,
                       ensured packages were loaded in a timely manner prioritizing
                       accuracy to ensure quality customer experience.
                   </p>
