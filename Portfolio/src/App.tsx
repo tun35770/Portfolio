@@ -1,4 +1,4 @@
-import { Card, Nav, Navbar } from 'react-bootstrap'
+import { Button, Card, Nav, Navbar } from 'react-bootstrap'
 import { HashRouter as Router } from "react-router-dom"
 import { HashLink } from 'react-router-hash-link';
 import './App.css'
@@ -255,7 +255,7 @@ function App() {
 
         <section id="portfolio" className='light-color-1 showcase-container'>
           <h1 className = 'hidden' style={{
-            fontSize: '6em',
+            fontSize: '4em',
             }}> Portfolio </h1>
           <Showcase showcaseImage='/BugSquish.png' showcaseTitle='BugSquish' 
                     showcaseDescription="A bug ticketing system for developers to collaborate 
@@ -279,10 +279,10 @@ function App() {
           
         <section id="contact" className='light-color-2 contact-container'>
           <h1 className = 'hidden' style={{
-            fontSize: '6em',
+            fontSize: '4em',
             }}> Contact Me </h1>
           
-          <Card className='contact-card light-color-3'>
+          <Card className='contact-card light-color-3 p-5'>
             <form className='contact-form' name="contact-me" method="POST" action="/#/" data-netlify="true">
               <input type="hidden" name="form-name" value="contact-me" />
               <p>
@@ -295,7 +295,7 @@ function App() {
                 <label>Message: <textarea name="message"></textarea></label>
               </p>
               <p>
-                <button type="submit">Send</button>
+                <Button className="px-5" variant="primary" type="submit">Send</Button>
               </p>
             </form>
           </Card>

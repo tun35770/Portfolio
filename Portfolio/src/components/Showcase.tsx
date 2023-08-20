@@ -12,7 +12,7 @@ const Showcase = ( {showcaseImage, showcaseTitle, showcaseDescription, showcaseL
   
   return (
     <div className={` ${getPositionClassName(position)} showcase hidden light-color-3 my-3 p-3`} >
-        <h1 className='Showcase-Title'> {showcaseTitle} </h1>
+        <h3 className='Showcase-Title'> {showcaseTitle} </h3>
         <img className='Showcase-Image' src={showcaseImage} alt='Showcase Image'/>
         <p className='my-3 Showcase-Description' > {showcaseDescription} </p>
         <a  href={showcaseLink} target="_blank" style={{
