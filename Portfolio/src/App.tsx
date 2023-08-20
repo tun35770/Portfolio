@@ -57,8 +57,16 @@ function App() {
               justifyContent: 'flex-end',
               gap: '2em'
             }}>
-              <a href="https://www.linkedin.com/in/ryan-m-338324aa/" target="blank_"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="50em"/> </a>
-              <a href="https://github.com/tun35770" target="blank_"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50em" /> </a>
+              <div style={{
+                display: 'flex',
+                gap: '2em',
+                flexWrap: 'wrap',
+                justifyContent: 'flex-end'
+              }}>
+                <p style={{fontSize:'1.8em', fontWeight: '400', margin: '0'}}> Find me on: </p>
+                <a href="https://www.linkedin.com/in/ryan-m-338324aa/" target="blank_"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="50em"/> </a>
+                <a href="https://github.com/tun35770" target="blank_"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50em" /> </a>
+              </div>
             </div>
 
           </div>
