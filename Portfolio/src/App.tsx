@@ -284,7 +284,7 @@ function App() {
           
           <Card className='contact-card light-color-3'>
             <form className='contact-form' name="contact-me" method="POST" action="/#/" data-netlify="true">
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="form-name" value="contact-me" />
               <p>
                 <label>Your Name: <input type="text" name="name" /></label>
               </p>
