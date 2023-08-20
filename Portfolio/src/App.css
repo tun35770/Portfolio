@@ -18,7 +18,7 @@
 
 .show {
   opacity: 1;
-  margin: 0.5em 0;
+  margin-bottom: 1em;
 }
 
 .Card h1 {
@@ -83,7 +83,7 @@ img {
 
 .showcase {
   width: 50%;
-  min-width: 350px;
+  min-width: 400px;
   border: 1px solid black;
 }
 
@@ -91,7 +91,7 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 5em;
+  padding-top: 7em;
   margin: 0 auto;
 }
 
