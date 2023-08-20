@@ -39,6 +39,7 @@ function App() {
               <HashLink style={{color:"#fff"}} smooth to="/#bio" className="nav-link white-text">About Me</HashLink>
               <HashLink style={{color:"#fff"}} smooth to="/#resume" className="nav-link white-text">Resume</HashLink>
               <HashLink style={{color:"#fff"}} smooth to="/#portfolio" className="nav-link white-text">Portfolio</HashLink>
+              <HashLink style={{color:"#fff"}} smooth to="/#contact" className="nav-link white-text">Contact me</HashLink>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -252,7 +253,7 @@ function App() {
         </section>
 
 
-        <section id="portfolio" className='light-color-1 Showcase-Group'>
+        <section id="portfolio" className='light-color-1 showcase-container'>
           <h1 className = 'hidden' style={{
             fontSize: '6em',
             }}> Portfolio </h1>
@@ -273,6 +274,30 @@ function App() {
                             to fetch live prices.' 
                     showcaseLink='https://tun35770.github.io/StockTracker/'
                     position='left'/>
+        </section>
+
+          
+        <section id="contact" className='light-color-2 contact-container'>
+          <h1 className = 'hidden' style={{
+            fontSize: '6em',
+            }}> Contact Me </h1>
+          
+          <Card className='contact-card light-color-3'>
+            <form className='contact-form' name="contact" method="POST" data-netlify="true">
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form>
+          </Card>
         </section>
 
       </div>

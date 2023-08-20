@@ -26,6 +26,7 @@
 }
 
 .dark-color {
+  background: rgba(77, 170, 224, 1);
   background-color: rgba(77, 170, 224, 1);
   color: rgb(254, 254, 254);
 }
@@ -35,12 +36,17 @@ img {
 }
 
 .light-color-1 {
-  background: linear-gradient(45deg, rgba(210, 241, 250, 1), rgba(255, 255, 255, 1));
+  background: linear-gradient(0deg, rgba(210, 241, 250, 1), rgba(255, 255, 255, 1));
   color: rgba(31, 51, 87, 1);
 }
 
 .light-color-2 {
-  background: linear-gradient(135deg, rgba(210, 241, 250, 1), rgba(255, 255, 255, 1));
+  background: linear-gradient(180deg, rgba(210, 241, 250, 1), rgba(255, 255, 255, 1));
+  color: rgba(31, 51, 87, 1);
+}
+
+.light-color-3 {
+  background: linear-gradient(315deg, rgba(210, 241, 250, 1), rgba(255, 255, 255, 1));
   color: rgba(31, 51, 87, 1);
 }
 
@@ -75,13 +81,13 @@ img {
   justify-content: space-evenly;
 }
 
-.Showcase {
+.showcase {
   width: 50%;
   min-width: 350px;
   border: 1px solid black;
 }
 
-.Showcase-Group {
+.showcase-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -101,4 +107,24 @@ img {
 
 .Showcase-Image {
   max-width: '5vw'
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5em 0;
+  margin: 0 auto;
+}
+
+.contact-card {
+  width:50%;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  padding: 1em 0;
 }
