@@ -30,6 +30,10 @@
   color: rgb(254, 254, 254);
 }
 
+img {
+  padding: 0.5em 0.25em;
+}
+
 .light-color-1 {
   background: linear-gradient(45deg, rgba(210, 241, 250, 1), rgba(255, 255, 255, 1));
   color: rgba(31, 51, 87, 1);
@@ -63,6 +67,12 @@
   justify-content: top;
   padding-top: 5em;
   min-height: 100vh;
+}
+
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .Showcase {
