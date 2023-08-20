@@ -283,7 +283,7 @@ function App() {
             }}> Contact Me </h1>
           
           <Card className='contact-card light-color-3'>
-            <form className='contact-form' name="contact" method="POST" data-netlify="true">
+            <form className='contact-form' name="contact" method="POST" action="/#/" data-netlify="true">
               <p>
                 <label>Your Name: <input type="text" name="name" /></label>
               </p>
