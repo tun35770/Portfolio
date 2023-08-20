@@ -146,6 +146,7 @@ function App() {
                   justifyContent: 'space-around',
                   backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
+                  border: 'solid black 2px'
                 }}>
                   <div style={{margin:'auto 0'}}>
                     <img src='/Temple.png' width='150em' height='150em' />
@@ -168,6 +169,7 @@ function App() {
                   justifyContent: 'space-around',
                   backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
+                  border: 'solid black 2px'
                 }}>
 
                   <div>
@@ -206,6 +208,7 @@ function App() {
                 <Card className="Card hidden p-3" style={{
                   backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
+                  border: 'solid black 2px'
                 }}>
                   <h1> Wegman's Food Markets </h1>
 
@@ -217,6 +220,7 @@ function App() {
                 <Card className="Card hidden p-3" style={{
                   backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
+                  border: 'solid black 2px'
                 }}>
                   <h1> UPS </h1>
 
@@ -230,6 +234,7 @@ function App() {
                 <Card className="Card hidden p-3" style={{
                   backgroundColor: 'rgba(77, 170, 224, 1)',
                   color: 'white',
+                  border: 'solid black 2px'
                 }}>
                   <h1> Peer Tutor </h1>
 
