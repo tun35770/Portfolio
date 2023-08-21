@@ -130,3 +130,6 @@ img {
   padding: 1em 0;
 }
 
+form input, textarea {
+  background-color: white;
+}
