@@ -19,8 +19,20 @@ function App() {
       });
     });
 
+    const observerBounce = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting)
+          entry.target.classList.add('show-bounce')
+        else
+          entry.target.classList.remove('show-bounce');
+      });
+    });
+
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
+
+    const hiddenElementsBounce = document.querySelectorAll('.hidden-bounce');
+    hiddenElementsBounce.forEach((el) => observerBounce.observe(el));
   }, [])
  
 
@@ -91,20 +103,46 @@ function App() {
           </div>
 
         </section>
-
+       
         <section id="technologies" className="tech-container dark-color">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="100em" />
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="100em"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="100em"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="100em"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="100em"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="100em"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="100em"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="100em"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="100em"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="100em"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="100em"/>
-        
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="100em" />
+          </div>
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="100em"/>
+          </div>
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="100em"/>
+          </div>
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="100em"/>
+          </div>
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="100em"/>
+          </div>
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="100em"/>
+          </div>
+          
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="100em"/>
+          </div>
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" width="100em"/>
+          </div>
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg" width="100em"/>
+          </div>
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="100em"/>
+          </div>
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="100em"/>
+          </div>
+          <div className='icon hidden-bounce'>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="100em"/>
+      </div>
+
         </section>
 
         <section id="resume" className="light-color-2 resume-container">
@@ -145,7 +183,8 @@ function App() {
                   display:'flex',
                   flexDirection:'row',
                   justifyContent: 'space-around',
-                  border: 'solid black 2px'
+                  border: 'solid black 2px',
+                  minWidth: '350px'
                 }}>
                   <div style={{margin:'auto 0'}}>
                     <img src='/Temple.png' width='150em' height='150em' />
@@ -166,7 +205,8 @@ function App() {
                   display:'flex',
                   flexDirection:'row',
                   justifyContent: 'space-around',
-                  border: 'solid black 2px'
+                  border: 'solid black 2px',
+                  minWidth: '350px'
                 }}>
 
                   <div>
@@ -206,7 +246,8 @@ function App() {
                   display:'flex',
                   flexDirection:'row',
                   justifyContent: 'space-around',
-                  border: 'solid black 2px'
+                  border: 'solid black 2px',
+                  minWidth: '350px'
                 }}>
                   <div>
                     <h1> Wegman's Food Markets </h1>
@@ -225,7 +266,8 @@ function App() {
                   display:'flex',
                   flexDirection:'row',
                   justifyContent: 'space-around',
-                  border: 'solid black 2px'
+                  border: 'solid black 2px',
+                  minWidth: '350px'
                 }}>
                   <div>
                     <h1> UPS </h1>
@@ -246,7 +288,8 @@ function App() {
                   display:'flex',
                   flexDirection:'row',
                   justifyContent: 'space-around',
-                  border: 'solid black 2px'
+                  border: 'solid black 2px',
+                  minWidth: '350px'
                 }}>
                   <div>
                     <h1> Peer Tutor </h1>
