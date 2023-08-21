@@ -75,6 +75,16 @@
   font-size: 2em;
 }
 
+.Card:hover, .showcase:hover {
+  transform: scale(105%, 105%);
+  transition: all 400ms;
+}
+
+.tech-container img:hover, a:hover {
+  transform: scale(110%, 110%);
+  transition: all 400ms;
+}
+
 .dark-color {
   background: rgba(77, 170, 224, 1);
   background-color: rgba(77, 170, 224, 1);
