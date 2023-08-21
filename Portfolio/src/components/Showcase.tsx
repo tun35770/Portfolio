@@ -3,31 +3,56 @@ const Showcase = ( {showcaseImage, showcaseTitle, showcaseDescription, showcaseL
   const getPositionClassName = (position:string) => {
     let classname;
     if(position === 'left')
-      classname = 'Showcase-Left'
+      classname = 'Showcase-Left light-color-3 '
     else 
-      classname = 'Showcase-Right'
+      classname = 'Showcase-Right light-color-4 '
 
+    
     return classname;
   }
   
   return (
-    <div className={` ${getPositionClassName(position)} showcase hidden light-color-3 p-3`} >
-        <h3 className='Showcase-Title'> {showcaseTitle} </h3>
+    <div className={` ${getPositionClassName(position)} showcase hidden p-3`} >
         <div style={{
           display:'flex',
           
         }}>
-          <img className='Showcase-Image' src={showcaseImage} alt='Showcase Image'/>
-          <div className='pl-3' style={{
-            display:'flex',
-            flexFlow: 'column wrap',
-            justifyContent: 'space-evenly'
-          }}>
-            <p className='my-3 Showcase-Description' > {showcaseDescription} </p>
-            <a  href={showcaseLink} target="_blank" style={{
-              color: 'rgb(0, 128, 191)'
-            }}>Click here for demo</a>
-          </div>
+          {position === 'left' &&
+            <>
+              <img className='showcase-image' src={showcaseImage} alt='Showcase Image'/>
+              <div className='pl-3' style={{
+                display:'flex',
+                flexFlow: 'column wrap',
+                justifyContent: 'space-evenly'
+              }}>
+                <h3 className='showcase-title'> {showcaseTitle} </h3>
+                <p className='my-3 showcase-description' > {showcaseDescription} </p>
+                <a  href={showcaseLink} target="_blank" style={{
+                  color: 'rgb(0, 128, 191)'
+                }}>Click here for demo</a>
+              </div>
+            </> 
+          }
+          {position === 'right' && 
+            <>
+              
+              <div className='px-3' style={{
+                display:'flex',
+                flexFlow: 'column wrap',
+                justifyContent: 'space-evenly'
+              }}>
+            
+                <h3 className='showcase-title'> {showcaseTitle} </h3>
+                <p className='my-3 showcase-description' > {showcaseDescription} </p>
+                <a  href={showcaseLink} target="_blank" style={{
+                  color: 'rgb(0, 128, 191)'
+                }}>Click here for demo</a>
+              </div>
+              
+              <img className='showcase-image' src={showcaseImage} alt='Showcase Image'/>
+            </> 
+          
+          }
         </div>
     </div>
   )

@@ -46,8 +46,13 @@ img {
 }
 
 .light-color-3 {
-  background: linear-gradient(315deg, rgba(210, 241, 250, 1), rgba(255, 255, 255, 1));
-  color: rgba(31, 51, 87, 1);
+  background: linear-gradient(315deg, rgba(77, 170, 224, 1), rgba(210, 241, 250, 1));
+  color: white;
+}
+
+.light-color-4 {
+  background: linear-gradient(45deg, rgba(77, 170, 224, 1), rgba(210, 241, 250, 1));
+  color: white;
 }
 
 .name {
@@ -95,6 +100,10 @@ img {
   margin: 0 auto;
 }
 
+.showcase-title, .showcase-description {
+  color: white;
+}
+
 .Showcase-Left {
   align-self: flex-start;
   margin-left: 2em;
@@ -105,7 +114,7 @@ img {
   margin-right: 2em;
 }
 
-.Showcase-Image {
+.showcase-image {
   max-width: '5vw'
 }
 

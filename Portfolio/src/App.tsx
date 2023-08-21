@@ -141,12 +141,10 @@ function App() {
                 margin: '0 auto'
               }}>
                 
-                <Card className="Card hidden p-3" style={{
+                <Card className="Card light-color-3 hidden p-3" style={{
                   display:'flex',
                   flexDirection:'row',
                   justifyContent: 'space-around',
-                  backgroundColor: 'rgba(77, 170, 224, 1)',
-                  color: 'white',
                   border: 'solid black 2px'
                 }}>
                   <div style={{margin:'auto 0'}}>
@@ -164,12 +162,10 @@ function App() {
                   
                 </Card>
 
-                <Card className="Card hidden p-3" style={{
+                <Card className="Card light-color-3 hidden p-3" style={{
                   display:'flex',
                   flexDirection:'row',
                   justifyContent: 'space-around',
-                  backgroundColor: 'rgba(77, 170, 224, 1)',
-                  color: 'white',
                   border: 'solid black 2px'
                 }}>
 
@@ -206,43 +202,64 @@ function App() {
                 margin: '0 auto'
               }}>
                 
-                <Card className="Card hidden p-3" style={{
-                  backgroundColor: 'rgba(77, 170, 224, 1)',
-                  color: 'white',
+                <Card className="Card light-color-4 hidden p-3" style={{
+                  display:'flex',
+                  flexDirection:'row',
+                  justifyContent: 'space-around',
                   border: 'solid black 2px'
                 }}>
-                  <h1> Wegman's Food Markets </h1>
+                  <div>
+                    <h1> Wegman's Food Markets </h1>
 
-                  <p> Retail Associate </p>
-                  <p> Worked alongside team members to maintain department
-                      and aid customers, as well as satisfying high company standards. </p>
+                    <p> Retail Associate </p>
+                    <p> Worked alongside team members to maintain department
+                        and aid customers, as well as satisfying high company standards. </p>
+                  </div>
+
+                  <div style={{margin:'auto 0'}}>
+                    <img src='/wegmans.png' width='150em' height='150em' />
+                  </div>
                 </Card>
 
-                <Card className="Card hidden p-3" style={{
-                  backgroundColor: 'rgba(77, 170, 224, 1)',
-                  color: 'white',
+                <Card className="Card light-color-4 hidden p-3" style={{
+                  display:'flex',
+                  flexDirection:'row',
+                  justifyContent: 'space-around',
                   border: 'solid black 2px'
                 }}>
-                  <h1> UPS </h1>
+                  <div>
+                    <h1> UPS </h1>
 
-                  <p> Package Handler </p>
-                  <p> Coordinated with teammates to move packages swiftly,
-                      ensured packages were loaded in a timely manner prioritizing
-                      accuracy to ensure quality customer experience.
-                  </p>
+                    <p> Package Handler </p>
+                    <p> Coordinated with teammates to move packages swiftly,
+                        ensured packages were loaded in a timely manner prioritizing
+                        accuracy to ensure quality customer experience.
+                    </p>
+                  </div>
+
+                  <div style={{margin:'auto 0'}}>
+                    <img src='/ups.png' width='150em' height='150em' />
+                  </div>
                 </Card>
 
-                <Card className="Card hidden p-3" style={{
-                  backgroundColor: 'rgba(77, 170, 224, 1)',
-                  color: 'white',
+                <Card className="Card light-color-4 hidden p-3" style={{
+                  display:'flex',
+                  flexDirection:'row',
+                  justifyContent: 'space-around',
                   border: 'solid black 2px'
                 }}>
-                  <h1> Peer Tutor </h1>
+                  <div>
+                    <h1> Peer Tutor </h1>
 
-                  <p> Mathematics and Computer Science </p>
-                  <p> Aided students with coursework in mathematics and computer science.
-                      Explained relevant concepts to ensure student retention and comprehension.
-                  </p>
+                    <p> Mathematics and Computer Science </p>
+                    <p> Aided students with coursework in mathematics and computer science.
+                        Explained relevant concepts to ensure student retention and comprehension.
+                    </p>
+                  </div>
+
+                  <div style={{margin:'auto 0'}}>
+                    <img src='/PennState.png' width='150em' height='150em' />
+                  </div>
                 </Card>
               </div>
               
