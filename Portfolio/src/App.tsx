@@ -17,7 +17,7 @@ function App() {
         else
           entry.target.classList.remove('show');
       });
-    });
+    }, {threshold: 0.35});
 
     const observerBounce = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
