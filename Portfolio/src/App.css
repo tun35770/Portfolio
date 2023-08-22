@@ -80,7 +80,7 @@
   transition: all 400ms;
 }
 
-.tech-container img:hover, a:hover {
+.icon:hover {
   transform: scale(110%, 110%);
   transition: all 400ms;
 }
