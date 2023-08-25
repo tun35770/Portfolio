@@ -28,11 +28,23 @@ function App() {
       });
     });
 
+    const observerShowcase = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if(entry.isIntersecting)
+          entry.target.classList.add('show-showcase')
+        else
+          entry.target.classList.remove('show-showcase');
+      });
+    }, {threshold: 0.35});
+
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
 
     const hiddenElementsBounce = document.querySelectorAll('.hidden-bounce');
     hiddenElementsBounce.forEach((el) => observerBounce.observe(el));
+
+    const hiddenElementsShowcase = document.querySelectorAll('.hidden-showcase');
+    hiddenElementsShowcase.forEach((el) => observerShowcase.observe(el));
   }, [])
  
 

@@ -1,7 +1,7 @@
 const Showcase = ( {showcaseImage, showcaseTitle, showcaseDescription, showcaseLink, position }: {showcaseImage: string, showcaseTitle: string, showcaseDescription: string, showcaseLink: string, position: string} ) => {
   
   return (
-    <div className={`showcase hidden light-color-4 p-3`} >
+    <div className={`showcase hidden-showcase light-color-4 p-3`} >
         <img className='showcase-image' src={showcaseImage} height="210em" alt='Showcase Image'/>
         <div className='pl-3' style={{
           display:'flex',
