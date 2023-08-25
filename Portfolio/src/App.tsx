@@ -318,7 +318,7 @@ function App() {
         </section>
 
 
-        <section id="portfolio" className='light-color-1 showcase-container'>
+        <section id="portfolio" className='light-color-1 portfolio-container'>
           <h1 className = 'hidden pb-3' style={{
             fontSize: '4em',
             textAlign: 'center',
@@ -326,23 +326,24 @@ function App() {
             margin: '0 auto',
             }}> Portfolio </h1>
         
-            <Showcase showcaseImage='/bugsquish_vertical.png' showcaseTitle='BugSquish' 
+          <div className="showcase-container">
+            <Showcase showcaseImage='/bugsquish_horizontal.png' showcaseTitle='BugSquish' 
                       showcaseDescription="A bug ticketing system for developers to collaborate 
-                              and manage their software's bugs throughout development.
-                              ***DEMO LOGIN*** user: ryanmu1415 pass: Password123456#"
+                              and manage their software's bugs throughout development."
                       showcaseLink='https://tun35770.github.io/BugSquish'
                       position='left' />
 
-            <Showcase showcaseImage='/game-of-life_vertical.png' showcaseTitle='Game of Life' 
+            <Showcase showcaseImage='/game-of-life_horizontal.png' showcaseTitle='Game of Life' 
                       showcaseDescription="My own version of Conway's Game of Life, made in React."
                       showcaseLink='https://tun35770.github.io/game-of-life'
                       position='right'/>
 
-            <Showcase showcaseImage='/StockTracker_vertical.png' showcaseTitle='Stock Tracker' 
+            <Showcase showcaseImage='/stocktracker_horizontal.png' showcaseTitle='Stock Tracker' 
                     showcaseDescription='A stock price tracking app. Makes use of finnhub and CoinGecko APIs
                             to fetch live prices.' 
                     showcaseLink='https://tun35770.github.io/StockTracker/'
                     position='left'/>
+            </div>
          
         </section>
 

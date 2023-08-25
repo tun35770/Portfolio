@@ -152,8 +152,16 @@ img {
   overflow: hidden;
 }
 
+.portfolio-container {
+  padding-top: 5em;
+}
+
 .showcase {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0em;
+  width: 20%;
+  height: 35em;
   min-width: 400px;
   border: 1px solid black;
   box-shadow: 4px 4px 10px 0px rgb(158, 159, 159);
@@ -161,28 +169,15 @@ img {
 
 .showcase-container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
-  padding-top: 7em;
   margin: 0 auto;
 }
 
 .showcase-title, .showcase-description {
   color: white;
-}
-
-.Showcase-Left {
-  align-self: flex-start;
-  margin-left: 2em;
-}
-
-.Showcase-Right {
-  align-self: flex-end;
-  margin-right: 2em;
-}
-
-.showcase-image {
-  max-width: '5vw'
 }
 
 .contact-container {
