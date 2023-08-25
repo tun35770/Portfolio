@@ -190,7 +190,7 @@ function App() {
                   </div>
                   
 
-                  <div>
+                  <div className="resume-description">
                     <h1> Temple University </h1>
 
                     <p> B.S. Computer Science </p>
@@ -205,7 +205,7 @@ function App() {
                   <div>
                     <img src='PennState.png' width='150em' height='150em' />
                   </div>
-                  <div>
+                  <div className="resume-description">
                     <h1> Penn State University </h1>
 
                     <p> No degree (transferred)</p>
@@ -236,7 +236,7 @@ function App() {
               }}>
                 
                 <Card className="Card resume-card light-color-4 hidden p-3">
-                  <div>
+                  <div className="resume-description">
                     <h1 className="m-1"> Wegman's Food Markets </h1>
 
                     <p className="m-1"> Retail Associate </p>
@@ -249,8 +249,8 @@ function App() {
                   </div>
                 </Card>
 
-                <Card className="Card resume-card light-color-4 hidden px-3">
-                  <div>
+                <Card className="Card resume-card light-color-4 hidden p-3">
+                  <div className="resume-description">
                     <h1 className="m-1"> UPS </h1>
 
                     <p className="m-1"> Package Handler </p>
@@ -266,7 +266,7 @@ function App() {
                 </Card>
 
                 <Card className="Card resume-card light-color-4 hidden p-3" >
-                  <div>
+                  <div className="resume-description">
                     <h1 className="m-1"> Peer Tutor </h1>
 
                     <p className="m-1"> Mathematics and Computer Science </p>
