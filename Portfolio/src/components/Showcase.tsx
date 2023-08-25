@@ -2,7 +2,7 @@ const Showcase = ( {showcaseImage, showcaseTitle, showcaseDescription, showcaseL
   
   return (
     <div className={`showcase hidden-showcase light-color-4 p-3`} >
-        <img className='showcase-image' src={showcaseImage} height="210em" alt='Showcase Image'/>
+        <img className='showcase-image' src={showcaseImage} alt='Showcase Image'/>
         <div className='pl-3' style={{
           display:'flex',
           flexFlow: 'column wrap',

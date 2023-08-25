@@ -192,11 +192,11 @@ img {
   flex-direction: column;
   gap: 0em;
   width: 28%;
-  height: 35em;
+  height: 65vh;
   min-width: 300px;
   border: 1px solid black;
   box-shadow: 4px 4px 10px 0px rgb(158, 159, 159);
-  border-radius: 5%;
+  border-radius: 7.5% / 5%;
 }
 
 .showcase-container {
@@ -210,6 +210,10 @@ img {
 
 .showcase-title, .showcase-description {
   color: white;
+}
+
+.showcase-image {
+  height: 25vh;
 }
 
 .contact-container {
