@@ -123,12 +123,12 @@ img {
 }
 
 .light-color-3 {
-  background: linear-gradient(315deg, rgba(77, 170, 224, 1), rgba(210, 241, 250, 1));
+  background: linear-gradient(315deg, rgba(77, 170, 224, 1), 70%, rgba(210, 241, 250, 1));
   color: white;
 }
 
 .light-color-4 {
-  background: linear-gradient(45deg, rgba(77, 170, 224, 1), rgba(210, 241, 250, 1));
+  background: linear-gradient(45deg, rgba(77, 170, 224, 1), 70%, rgba(210, 241, 250, 1));
   color: white;
 }
 
