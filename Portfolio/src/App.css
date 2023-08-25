@@ -171,6 +171,7 @@ img {
 
 .portfolio-container {
   padding-top: 5em;
+  height: 100vh;
 }
 
 .showcase {
