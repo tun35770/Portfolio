@@ -173,7 +173,7 @@ function App() {
               minWidth: '400px',
             }}>
 
-              <h1 className='hidden'> Education </h1>
+              <h1 className='hidden m-0'> Education </h1>
 
               <div className="p-5" style={{
                 display:'flex',
@@ -184,13 +184,7 @@ function App() {
                 margin: '0 auto'
               }}>
                 
-                <Card className="Card light-color-3 hidden p-3" style={{
-                  display:'flex',
-                  flexDirection:'row',
-                  justifyContent: 'space-around',
-                  border: 'solid black 2px',
-                  minWidth: '350px'
-                }}>
+                <Card className="Card resume-card light-color-3 hidden p-3">
                   <div style={{margin:'auto 0'}}>
                     <img src='/Temple.png' width='150em' height='150em' />
                   </div>
@@ -206,13 +200,7 @@ function App() {
                   
                 </Card>
 
-                <Card className="Card light-color-3 hidden p-3" style={{
-                  display:'flex',
-                  flexDirection:'row',
-                  justifyContent: 'space-around',
-                  border: 'solid black 2px',
-                  minWidth: '350px'
-                }}>
+                <Card className="Card resume-card light-color-3 hidden p-3">
 
                   <div>
                     <img src='PennState.png' width='150em' height='150em' />
@@ -236,7 +224,7 @@ function App() {
               minWidth: '400px',
             }}>
 
-              <h1 className='hidden'> Work </h1>
+              <h1 className='hidden m-0'> Work </h1>
 
               <div className="p-5" style={{
                 display:'flex',
@@ -247,17 +235,11 @@ function App() {
                 margin: '0 auto'
               }}>
                 
-                <Card className="Card light-color-4 hidden p-3" style={{
-                  display:'flex',
-                  flexDirection:'row',
-                  justifyContent: 'space-around',
-                  border: 'solid black 2px',
-                  minWidth: '350px'
-                }}>
+                <Card className="Card resume-card light-color-4 hidden p-3">
                   <div>
-                    <h1> Wegman's Food Markets </h1>
+                    <h1 className="m-1"> Wegman's Food Markets </h1>
 
-                    <p> Retail Associate </p>
+                    <p className="m-1"> Retail Associate </p>
                     <p> Worked alongside team members to maintain department
                         and aid customers, as well as satisfying high company standards. </p>
                   </div>
@@ -267,17 +249,11 @@ function App() {
                   </div>
                 </Card>
 
-                <Card className="Card light-color-4 hidden p-3" style={{
-                  display:'flex',
-                  flexDirection:'row',
-                  justifyContent: 'space-around',
-                  border: 'solid black 2px',
-                  minWidth: '350px'
-                }}>
+                <Card className="Card resume-card light-color-4 hidden px-3">
                   <div>
-                    <h1> UPS </h1>
+                    <h1 className="m-1"> UPS </h1>
 
-                    <p> Package Handler </p>
+                    <p className="m-1"> Package Handler </p>
                     <p> Coordinated with teammates to move packages swiftly,
                         ensured packages were loaded in a timely manner prioritizing
                         accuracy to ensure quality customer experience.
@@ -289,17 +265,11 @@ function App() {
                   </div>
                 </Card>
 
-                <Card className="Card light-color-4 hidden p-3" style={{
-                  display:'flex',
-                  flexDirection:'row',
-                  justifyContent: 'space-around',
-                  border: 'solid black 2px',
-                  minWidth: '350px'
-                }}>
+                <Card className="Card resume-card light-color-4 hidden p-3" >
                   <div>
-                    <h1> Peer Tutor </h1>
+                    <h1 className="m-1"> Peer Tutor </h1>
 
-                    <p> Mathematics and Computer Science </p>
+                    <p className="m-1"> Mathematics and Computer Science </p>
                     <p> Aided students with coursework in mathematics and computer science.
                         Explained relevant concepts to ensure student retention and comprehension.
                     </p>

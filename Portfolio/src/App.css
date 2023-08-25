@@ -145,6 +145,15 @@ img {
   z-index: 10;
 }
 
+.resume-card {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-around !important;
+  border: solid black 2px !important;
+  min-width: 350px !important;
+  height: 12em;
+}
+
 .tech-container {
   display: flex;
   flex-wrap: wrap;
