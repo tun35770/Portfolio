@@ -4,6 +4,11 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
 .hidden {
   opacity: 0;
   margin: 0;
@@ -152,7 +157,7 @@ img {
 .resume-container {
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: flex-start;
   width: 100%;
   margin: 0 auto;
   padding-top: 5em;
@@ -184,12 +189,13 @@ img {
 
 .portfolio-container {
   padding-top: 5em;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .section-title-container {
   margin: 0 auto;
   width: 50%;
+  min-width: 270px;
   padding: 1em 0em;
   margin-bottom: 1em;
   background: linear-gradient(315deg, rgba(77, 170, 224, 1), 70%, rgba(210, 241, 250, 1));
@@ -218,7 +224,8 @@ img {
   gap: 0em;
   width: 28%;
   height: 65vh;
-  min-width: 300px;
+  min-width: 350px;
+  margin-bottom: 1em;
   border: 1px solid black;
   box-shadow: 4px 4px 10px 0px rgb(158, 159, 159);
   border-radius: 7.5% / 5%;
@@ -231,6 +238,7 @@ img {
   flex-wrap: wrap;
   width: 100%;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 .showcase-title, .showcase-description {
@@ -271,6 +279,15 @@ form input, textarea {
 @media screen and (max-width: 1319px) {
   .resume-description {
     font-size: 0.8em !important;
+  }
+
+  .showcase, .showcase-container, .portfolio-container {
+    min-width: 300px;
+  }
+
+  .showcase {
+    min-width: 350px ;
+    max-height: 650px;
   }
 }
 

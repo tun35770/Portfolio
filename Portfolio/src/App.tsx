@@ -158,7 +158,7 @@ function App() {
           </div>
           <div className='icon hidden-bounce'>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="100em"/>
-      </div>
+          </div>
 
         </section>
 
