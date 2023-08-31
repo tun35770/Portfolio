@@ -164,12 +164,10 @@ function App() {
 
         <section id="resume" className="light-color-2 resume-container">
 
-          <h1 className="hidden pb-3" style={{
-            fontSize: '4em',
-            textAlign: 'center',
-            width: '50%',
-            margin: '0 auto',
-          }}> Resume </h1>
+          <div className="hidden section-title-container">
+            <h1 className="section-title"> Resume </h1>
+          </div>
+          
 
           <div style={{
             display:'flex',
@@ -301,13 +299,10 @@ function App() {
 
 
         <section id="portfolio" className='light-color-1 portfolio-container'>
-          <h1 className = 'hidden pb-3' style={{
-            fontSize: '4em',
-            textAlign: 'center',
-            width: '50%',
-            margin: '0 auto',
-            }}> Portfolio </h1>
-        
+          <div className="hidden section-title-container">
+            <h1 className = 'section-title' > Portfolio </h1>
+          </div>
+
           <div className="showcase-container">
             <Showcase showcaseImage='/bugsquish_horizontal.png' showcaseTitle='BugSquish' 
                       showcaseDescription="A bug ticketing system for developers to collaborate 
@@ -331,10 +326,10 @@ function App() {
 
           
         <section id="contact" className='light-color-2 contact-container'>
-          <h1 className = 'hidden' style={{
-            fontSize: '4em',
-            }}> Contact Me </h1>
-          
+          <div className="hidden section-title-container">
+            <h1 className = 'section-title'> Contact Me </h1>
+          </div>
+
           <Card className='contact-card light-color-3 p-5'>
             <form className='contact-form' name="contact-me" method="POST" action="/#/" data-netlify="true">
               <input type="hidden" name="form-name" value="contact-me" />
