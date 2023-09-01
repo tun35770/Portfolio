@@ -12,8 +12,9 @@ const Showcase = ( {showcaseImage, showcaseTitle, showcaseDescription, showcaseL
           <h3 className='showcase-title'> {showcaseTitle} </h3>
           <p className='my-3 showcase-description' > {showcaseDescription} </p>
           <a  href={showcaseLink} target="_blank" style={{
-            color: 'rgb(0, 128, 191)'
-          }}>Click here for demo</a>
+            fontSize: '1.5em',
+            
+          }}> Click here for demo </a>
         </div>
       </div>
   )
